@@ -18,7 +18,7 @@
   --steel: #b7b7ce;
   --fairy: #d685ad;
   --caught: url("https://64.media.tumblr.com/6824f6d9269a0ffaca00a5fc3a6c091c/5efc5b26fb741b21-6f/s250x250_c1/8c17bef87dd80dc95c6a9b86e10df51e7d672430.gif");
-  --unCaught: url("https://lh3.googleusercontent.com/proxy/44Fh-04lHAaOVtdmnDvxKMJ12zATM1_n-zYxFu5RVEFsVH18ZMHN_ccSRsVAZ4A7bblrA6Le3R9NHWOz74dhwlqkMA");
+  --unCaught: url("https://cdn.edu.buncee.com/rackspace/bnc-assets/animations/b7b0e81603cc2b33d502bb8e6280c096/1db/1428011630_Yuki_052714Grass_01.gif");
 }
 
 .App {
@@ -28,8 +28,11 @@
 img {
   height: 200px;
   width: 200px;
-  border-style: solid;
-  background-color: lavenderblush;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  border-radius: 50%;
 }
 
 .card {
@@ -39,6 +42,7 @@ img {
   border-style: dashed;
   border-radius: 25%;
   margin: 10px;
+  background-position-y: bottom;
   background-repeat: no-repeat;
 }
 
@@ -55,4 +59,22 @@ img {
 
 .App-link {
   color: #61dafb;
+}
+
+@keyframes example {
+  0% {
+    margin-top: 10px;
+  }
+  25% {
+    margin-top: 0px;
+  }
+  50% {
+    margin-top: 10px;
+  }
+  75% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 10px;
+  }
 }

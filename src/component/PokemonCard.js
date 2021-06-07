@@ -27,11 +27,11 @@ class PokemonCard extends PureComponent {
         <h3>{this.props.name}</h3>
         <p>Type: {this.props.type}</p>
         <p>Weight: {this.props.weight}</p>
-        <img alt={this.props.name + " image"} src={this.props.frontImage} />
-        <br />
         <button onClick={this.handleClick}>
           {this.state.caught ? "Remove From Team" : "Add To Team"}
         </button>
+        <br />
+        <img alt={this.props.name + " image"} src={this.props.frontImage} />
       </div>
     );
   }
