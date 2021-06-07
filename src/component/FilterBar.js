@@ -1,9 +1,9 @@
 import React from "react";
 
-function FilterBar() {
+function FilterBar(props) {
   return (
     <div id="search-bar">
-      Filter: <input />
+      Filter: <input onChange={props.handleChange} />
     </div>
   );
 }

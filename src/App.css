@@ -1,3 +1,26 @@
+:root {
+  --normal: #a8a77a;
+  --fire: #ee8130;
+  --water: #6390f0;
+  --electric: #f7d02c;
+  --grass: #7ac74c;
+  --ice: #96d9d6;
+  --fighting: #c22e28;
+  --poison: #a33ea1;
+  --ground: #e2bf65;
+  --flying: #a98ff3;
+  --psychic: #f95587;
+  --bug: #a6b91a;
+  --rock: #b6a136;
+  --ghost: #735797;
+  --dragon: #6f35fc;
+  --dark: #705746;
+  --steel: #b7b7ce;
+  --fairy: #d685ad;
+  --caught: url("https://64.media.tumblr.com/6824f6d9269a0ffaca00a5fc3a6c091c/5efc5b26fb741b21-6f/s250x250_c1/8c17bef87dd80dc95c6a9b86e10df51e7d672430.gif");
+  --unCaught: url("https://lh3.googleusercontent.com/proxy/44Fh-04lHAaOVtdmnDvxKMJ12zATM1_n-zYxFu5RVEFsVH18ZMHN_ccSRsVAZ4A7bblrA6Le3R9NHWOz74dhwlqkMA");
+}
+
 .App {
   text-align: center;
 }
@@ -5,12 +28,18 @@
 img {
   height: 200px;
   width: 200px;
+  border-style: solid;
+  background-color: lavenderblush;
 }
 
 .card {
   display: inline-block;
   width: 400px;
   height: 400px;
+  border-style: dashed;
+  border-radius: 25%;
+  margin: 10px;
+  background-repeat: no-repeat;
 }
 
 .App-header {
