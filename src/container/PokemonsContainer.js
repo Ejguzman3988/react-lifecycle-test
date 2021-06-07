@@ -26,6 +26,7 @@ class PokemonsContainer extends Component {
         backImage={pokemon.back_image}
         weight={pokemon.weight}
         addPoke={this.props.addPoke}
+        caught={pokemon.caught}
       />
     ));
   }

@@ -31,11 +31,13 @@ class App extends Component {
 
   addPoke = (id) => {
     const pokemon = this.state.pokemons.find((p) => p.id === id);
+    pokemon.caught = true;
     this.setState(
       (prevState) => {
         let prevTeam = prevState.team;
         const indexOfPoke = prevTeam.indexOf(pokemon);
         if (prevTeam.includes(pokemon)) {
+          pokemon.caught = false;
           return {
             team: [
               ...prevTeam.splice(0, indexOfPoke),

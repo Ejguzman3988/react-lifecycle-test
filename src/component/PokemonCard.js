@@ -2,7 +2,7 @@ import React, { Component, PureComponent } from "react";
 
 class PokemonCard extends PureComponent {
   state = {
-    caught: false,
+    caught: this.props.caught,
   };
 
   handleClick = (e) => {
